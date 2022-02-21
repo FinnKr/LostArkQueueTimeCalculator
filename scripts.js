@@ -7,7 +7,7 @@ let start_time = new Date();
 
 function displayEta() {
     let minutes = Math.floor(eta/60);
-    let seconds = eta
+    let seconds = eta % 60;
     if (minutes > 0) {
         eta_output.innerText = minutes + " minutes & " + seconds + " seconds";
     } else {
